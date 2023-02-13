@@ -1,0 +1,14 @@
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@/*": ["./src/*"],
+      "@types": ["src/types"],
+      "@composables": ["src/composables"],
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "es5", "es6"]
+  }
+}
